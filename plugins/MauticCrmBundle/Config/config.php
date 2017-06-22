@@ -11,9 +11,9 @@
 
 return [
     'name'        => 'CRM',
-    'description' => 'Enables integration with Mautic supported CRMs.',
-    'version'     => '1.0',
-    'author'      => 'Mautic',
+    'description' => 'Enables integration with Mautic supported CRMs and Odoo.',
+    'version'     => '1.1',
+    'author'      => 'Mautic & Axol Bioscience',
     'routes'      => [
         'public' => [
             'mautic_integration_contacts' => [
@@ -43,6 +43,12 @@ return [
             ],
         ],
         'integrations' => [
+        	'mautic.integration.odoo' => [
+        			'class'		=> \MauticPlugin\MauticCrmBundle\Integration\OdooIntegration::class,
+        			'arguments'	=> [
+        					
+        			]
+        	],
             'mautic.integration.hubspot' => [
                 'class'     => \MauticPlugin\MauticCrmBundle\Integration\HubspotIntegration::class,
                 'arguments' => [
