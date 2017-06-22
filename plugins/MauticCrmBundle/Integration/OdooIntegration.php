@@ -1,7 +1,7 @@
 <?php
 
 /*
- * @copyright
+ * @copyright	2017 Mautic Contributors. All rights reserved
  * @author		Axol Bioscience
  * 
  * @link		http://axolbio.com
@@ -14,11 +14,7 @@ namespace MauticPlugin\MauticCrmBundle\Integration;
 use Auke\Ripcord\Client;
 use Auke\Ripcord\ripcord;
 
-use Mautic\CoreBundle\Helper\UserHelper;
 use Mautic\LeadBundle\Entity\Lead;
-use Mautic\LeadBundle\Entity\StagesChangeLog;
-use Mautic\StageBundle\Entity\Stage;
-use Symfony\Component\Routing\Generator\UrlGeneratorInterface;
 use Mautic\PluginBundle\Integration\AbstractIntegration;
 
 $url = 'https://www.axolbio.com/web';

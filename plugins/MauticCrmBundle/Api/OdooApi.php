@@ -4,7 +4,11 @@ namespace MauticPlugin\MauticCrmBundle\Api;
 
 use Mautic\EmailBundle\Helper\MailHelper;
 use Mautic\PluginBundle\Exception\ApiErrorException;
+use MauticPlugin\MauticCrmBundle\Integration\OdooIntegration;
 
+/**
+ * @property OdooIntegration $integration
+ */
 class OdooApi extends CrmApi
 {
 	/**
