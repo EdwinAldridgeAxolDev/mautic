@@ -61,7 +61,6 @@ class OdooIntegration extends CrmAbstractIntegration
      */
     public function getApiUrl()
     {
-        //return 'https://www.axolbio.com/web';
         return $this->keys['hostUrl'];
     }
 

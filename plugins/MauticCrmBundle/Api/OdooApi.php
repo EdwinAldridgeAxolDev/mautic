@@ -24,9 +24,6 @@ class OdooApi extends CrmApi
      */
     protected function request($url, $operation, $parameters = [], $method = null, $object = null)
     {
-        //$db = 'odoo';
-        //$password = 'leadmanagement';
-        //$username = 'mautic';
         $extraParameters = $parameters;
         $parameters      = [
                 'model'     => $object,
