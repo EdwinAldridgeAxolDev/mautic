@@ -44,37 +44,37 @@ return [
         ],
         'integrations' => [
         	'mautic.integration.odoo' => [
-        			'class'		=> \MauticPlugin\MauticCrmBundle\Integration\OdooIntegration::class,
-        			'arguments'	=> [
+        		'class'     => 'MauticPlugin\MauticCrmBundle\Integration\OdooIntegration',
+        		'arguments' => [
         					
-        			]
+        		],
         	],
             'mautic.integration.hubspot' => [
-                'class'     => \MauticPlugin\MauticCrmBundle\Integration\HubspotIntegration::class,
+                'class'     => 'MauticPlugin\MauticCrmBundle\Integration\HubspotIntegration',
                 'arguments' => [
                     'mautic.helper.user',
                 ],
             ],
             'mautic.integration.salesforce' => [
-                'class'     => \MauticPlugin\MauticCrmBundle\Integration\SalesforceIntegration::class,
+                'class'     => 'MauticPlugin\MauticCrmBundle\Integration\SalesforceIntegration',
                 'arguments' => [
 
                 ],
             ],
             'mautic.integration.sugarcrm' => [
-                'class'     => \MauticPlugin\MauticCrmBundle\Integration\SugarcrmIntegration::class,
+                'class'     => 'MauticPlugin\MauticCrmBundle\Integration\SugarcrmIntegration',
                 'arguments' => [
 
                 ],
             ],
             'mautic.integration.vtiger' => [
-                'class'     => \MauticPlugin\MauticCrmBundle\Integration\VtigerIntegration::class,
+                'class'     => 'MauticPlugin\MauticCrmBundle\Integration\VtigerIntegration',
                 'arguments' => [
 
                 ],
             ],
             'mautic.integration.zoho' => [
-                'class'     => \MauticPlugin\MauticCrmBundle\Integration\ZohoIntegration::class,
+                'class'     => 'MauticPlugin\MauticCrmBundle\Integration\ZohoIntegration',
                 'arguments' => [
 
                 ],
