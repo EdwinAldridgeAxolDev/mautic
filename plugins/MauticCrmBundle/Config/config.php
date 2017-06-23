@@ -43,6 +43,12 @@ return [
             ],
         ],
         'integrations' => [
+            'mautic.integration.odoo' => [
+                'class'     => \MauticPlugin\MauticCrmBundle\Integration\OdooIntegration::class,
+                'arguments' => [
+
+                ],
+            ],
             'mautic.integration.hubspot' => [
                 'class'     => \MauticPlugin\MauticCrmBundle\Integration\HubspotIntegration::class,
                 'arguments' => [
