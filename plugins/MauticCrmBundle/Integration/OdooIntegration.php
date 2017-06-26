@@ -260,4 +260,14 @@ class OdooIntegration extends CrmAbstractIntegration
 
         return $formattedData;
     }
+
+    /**
+     * {@inheritdoc}
+     *
+     * @see \MauticPlugin\MauticCrmBundle\Integration\CrmAbstractIntegration::getSupportedFeatures()
+     */
+    public function getSupportedFeatures()
+    {
+        return ['push_lead'];
+    }
 }
