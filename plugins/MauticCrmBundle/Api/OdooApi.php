@@ -20,7 +20,6 @@ class OdooApi extends CrmApi
      * @param string $object
      *
      * @return mixed
-     * @TODO Error handling
      */
     protected function request($url, $operation, $parameters = [], $method = null, $object = null)
     {
